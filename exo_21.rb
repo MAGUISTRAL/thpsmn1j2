@@ -3,6 +3,7 @@ print "> "
 nb = gets.chomp.to_i
 i=1
 
+
 if nb > 25
   then
   puts "nombre maximum = 25"
@@ -12,7 +13,10 @@ if nb > 25
 end
 
 while i<=nb
-puts ("" * nb)
-puts ("# " * i)
+  l = nb-i
+  l = l*2
+test = (" " * l)
+test1 = ("# " * i)
+puts "#{test} #{test1}"
 i=i+1
 end
